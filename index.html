@@ -112,32 +112,37 @@
       </section>
 
       <section id="contact" class="section">
-        <div class="container grid two">
-          <div>
+        <div class="container">
+          <div class="contact-content">
             <h2>Contact</h2>
-            <p>Heb je een vraag of wil je samenwerken? Stuur me gerust een berichtje.</p>
-            <ul class="contact-list">
-              <li><a href="mailto:voorbeeld@email.com">daan.schepens@gmail.com</a></li>
-              <li><a href="mailto:voorbeeld@email.com">91274@roc-teraa.nl</a></li>
-            <li><a href="https://github.com/DaanSchepens?tab=repositories" target="_blank" rel="noopener">GitHub</a></li>
-            </ul>
+            <p>Heb je een vraag, wil je samenwerken of heb je feedback? Neem gerust contact met me op!</p>
+
+            <div class="contact-grid">
+              <div class="contact-card">
+                <h3>📧 E-mail</h3>
+                <p>Stuur me een e-mail voor vragen of samenwerkingen:</p>
+                <a href="mailto:daan.schepens@gmail.com" class="contact-link">daan.schepens@gmail.com</a>
+              </div>
+
+              <div class="contact-card">
+                <h3>🏫 School E-mail</h3>
+                <p>Voor schoolgerelateerde zaken:</p>
+                <a href="mailto:91274@roc-teraa.nl" class="contact-link">91274@roc-teraa.nl</a>
+              </div>
+
+              <div class="contact-card">
+                <h3>💻 GitHub</h3>
+                <p>Bekijk mijn projecten en code:</p>
+                <a href="https://github.com/DaanSchepens" target="_blank" rel="noopener" class="contact-link">github.com/DaanSchepens</a>
+              </div>
+
+              <div class="contact-card">
+                <h3>📍 Locatie</h3>
+                <p>Woonplaats:</p>
+                <span class="contact-info">Nederland</span>
+              </div>
+            </div>
           </div>
-          <form id="contact-form" class="card" novalidate>
-            <label>
-              <span>Naam</span>
-              <input type="text" name="name" autocomplete="name" required>
-            </label>
-            <label>
-              <span>E-mail</span>
-              <input type="email" name="email" autocomplete="email" required>
-            </label>
-            <label>
-              <span>Bericht</span>
-              <textarea name="message" rows="5" required></textarea>
-            </label>
-            <button type="submit" class="button primary">Verstuur</button>
-            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
-          </form>
         </div>
       </section>
     </main>

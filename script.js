@@ -159,25 +159,7 @@ const projects = [
   window.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeModal(); });
 })();
 
-// Contact form validation + mailto fallback
-(function(){
-  const form = document.getElementById('contact-form');
-  const status = document.getElementById('form-status');
-  form?.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    const data = new FormData(form);
-    const name = String(data.get('name')||'').trim();
-    const email = String(data.get('email')||'').trim();
-    const message = String(data.get('message')||'').trim();
-    if(!name || !email || !message){
-      status.textContent = 'Vul alle velden in.';
-      return;
-    }
-    const mailto = `mailto:voorbeeld@email.com?subject=${encodeURIComponent('Portfolio contact van '+name)}&body=${encodeURIComponent(message+"\n\nVan: "+name+" ("+email+")")}`;
-    window.location.href = mailto;
-    status.textContent = 'Je e-mailapp wordt geopend…';
-  });
-})();
+// Contact form removed - using direct contact links instead
 
 // Year in footer
 document.getElementById('year').textContent = String(new Date().getFullYear());
