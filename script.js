@@ -80,6 +80,14 @@ const projects = [
     description:'A quiz application with interactive features and scoring system.',
     image:'img/Screenshot 2025-10-22 092212.png',
     demo:'#', code:'https://github.com/DaanSchepens/QuizeMaster'
+  },
+  {
+    id:'p5',
+    title:'CryptoMania',
+    category:['web'],
+    description:'A website displaying all cryptocurrency coins with their current values.',
+    image:'img\Screenshot 2025-10-22 141232.png',
+    demo:'#', code:'https://github.com/DaanSchepens/CryptoMania'
   }
 ];
 
