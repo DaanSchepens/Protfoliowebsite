@@ -1,22 +1,93 @@
 # Portfolio Website
 
-Moderne, responsieve portfolio-website met projecten, modals, filters en contactformulier.
+Een moderne, responsieve portfolio-website gebouwd met HTML, CSS en JavaScript. Toont projecten met interactieve modals, filters en een contactformulier.
 
-## Snel starten
+## 🚀 Live Demo
 
-1. Plaats de bestanden op je webserver (bijv. `c:/xampp/htdocs/Protfoliowebsite`).
-2. Open `http://localhost/Protfoliowebsite/` in je browser.
+Bekijk de website live op: [https://daanschepens.github.io/Protfoliowebsite/](https://daanschepens.github.io/Protfoliowebsite/)
 
-## Aanpassen
+## 📋 Features
 
-- Vervang in `index.html` de tekst "Jouw Naam", e-mail en links.
-- Voeg je eigen projecten toe in `script.js` in de `projects` array.
-- Wil je een CV tonen? Plaats `cv.pdf` in de root.
+- **Responsief Design**: Werkt perfect op desktop, tablet en mobiel
+- **Dark/Light Theme**: Automatische thema-detectie met handmatige keuze
+- **Project Gallery**: Interactieve projecten grid met filters
+- **Modal Popups**: Gedetailleerde project informatie in modals
+- **Contact Formulier**: Direct contact via mailto
+- **Toegankelijkheid**: Semantische HTML en ARIA labels
+- **SEO Geoptimaliseerd**: Meta tags en manifest voor PWA
 
-## Features
+## 🛠️ Technologieën
 
-- Sticky navigatie, mobiel menu
-- Donker/licht-thema met opslag
-- Projecten grid met filters en modals
-- Toegankelijke semantische HTML
-- SEO met meta tags en manifest
+- HTML5
+- CSS3 (Custom Properties, Grid, Flexbox)
+- JavaScript (ES6+)
+- Progressive Web App (PWA)
+
+## 📁 Project Structuur
+
+```
+Protfoliowebsite/
+├── index.html          # Hoofdpagina
+├── styles.css          # Stijlen
+├── script.js           # JavaScript functionaliteit
+├── manifest.webmanifest # PWA manifest
+├── favicon.svg         # Favicon
+├── README.md           # Dit bestand
+└── img/                # Project afbeeldingen
+    ├── screenshot1.png
+    ├── screenshot2.png
+    └── ...
+```
+
+## 🚀 Snel Starten
+
+1. **Clone de repository:**
+   ```bash
+   git clone https://github.com/DaanSchepens/Protfoliowebsite.git
+   cd Protfoliowebsite
+   ```
+
+2. **Open in browser:**
+   - Dubbelklik op `index.html`
+   - Of gebruik een lokale server: `python -m http.server 8000`
+
+## 🎨 Aanpassen
+
+### Persoonlijke Informatie
+- Bewerk `index.html` om je naam, bio en contactgegevens aan te passen
+- Update de project data in `script.js`
+
+### Projecten Toevoegen
+Voeg nieuwe projecten toe aan de `projects` array in `script.js`:
+
+```javascript
+{
+  id: 'nieuw-project',
+  title: 'Project Naam',
+  category: ['web'], // of ['app'], ['school'], etc.
+  description: 'Korte beschrijving van het project.',
+  image: 'img/project-afbeelding.jpg',
+  demo: 'https://demo-link.com', // of '#' als geen demo
+  code: 'https://github.com/username/repo'
+}
+```
+
+### Thema Kleuren
+Pas de CSS custom properties aan in `styles.css` voor een eigen kleurenschema.
+
+## 📱 Progressive Web App
+
+De website kan geïnstalleerd worden als PWA op ondersteunde apparaten voor een app-achtige ervaring.
+
+## 🤝 Bijdragen
+
+Voel je vrij om een pull request te maken voor verbeteringen!
+
+## 📄 Licentie
+
+Dit project is beschikbaar onder de MIT License.
+
+---
+
+**Gemaakt door:** Daan Schepens
+**GitHub:** [@DaanSchepens](https://github.com/DaanSchepens)
