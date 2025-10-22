@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio | Mijn Projecten</title>
+    <meta name="description" content="Mijn portfolio: projecten die ik op school en in mijn vrije tijd heb gemaakt.">
+    <meta name="theme-color" content="#0ea5e9">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Portfolio | Mijn Projecten">
+    <meta property="og:description" content="Mijn portfolio: projecten die ik op school en in mijn vrije tijd heb gemaakt.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:image" content="/favicon.svg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio | Mijn Projecten">
+    <meta name="twitter:description" content="Mijn portfolio: projecten die ik op school en in mijn vrije tijd heb gemaakt.">
+    <meta name="twitter:image" content="/favicon.svg">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="logo" aria-label="Ga naar home">MN</a>
+        <nav class="nav" aria-label="Hoofdmenu">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+          <ul id="menu" class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Over mij</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projecten</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Wissel thema">🌙</button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Welkom, ik ben</p>
+            <h1>Daan Schepens</h1>
+            <p class="lead">Een enthousiaste ontwikkelaar die graag mooie en functionele websites bouwt. Hieronder vind je een selectie van mijn beste schoolprojecten.</p>
+            <div class="cta">
+              <a class="button primary" href="#projects">Bekijk projecten</a>
+              <a class="button ghost" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="gradient-orb"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container grid two">
+          <div>
+            <h2>Over mij</h2>
+            <p>Ik ben een student ontwikkelaar met een passie voor webtechnologie. Op school heb ik aan verschillende projecten gewerkt waarin ik HTML, CSS, JavaScript en frameworks heb gebruikt. Ik hou van strak design, nette code en oplossingen die echt werken.</p>
+            <p>Ik leer snel, werk graag samen en sta altijd open voor feedback om mijn werk nog beter te maken.</p>
+          </div>
+          <div class="about-card">
+            <ul class="facts">
+              <li><span>Woonplaats</span><strong>— Nederland</strong></li>
+              <li><span>Beschikbaar</span><strong>— Stage / Bijbaan</strong></li>
+              <li><span>Focus</span><strong>— Frontend & UI</strong></li>
+              <li><span>Talen</span><strong>— NL, EN</strong></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="chip-list" role="list">
+            <li class="chip">HTML</li>
+            <li class="chip">CSS</li>
+            <li class="chip">JavaScript</li>
+            <li class="chip">Git</li>
+            <li class="chip">Python</li>
+            <li class="chip">C#</li>
+            <li class="chip">C++</li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projecten</h2>
+            <div class="filters" role="tablist" aria-label="Filter projecten">
+              <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">Alles</button>
+              <button class="filter" data-filter="web" role="tab">Web</button>
+              <button class="filter" data-filter="app" role="tab">App</button>
+              <button class="filter" data-filter="school" role="tab">Arduino</button>
+            </div>
+          </div>
+          <div id="projects-grid" class="grid three"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container grid two">
+          <div>
+            <h2>Contact</h2>
+            <p>Heb je een vraag of wil je samenwerken? Stuur me gerust een berichtje.</p>
+            <ul class="contact-list">
+              <li><a href="mailto:voorbeeld@email.com">daan.schepens@gmail.com</a></li>
+              <li><a href="mailto:voorbeeld@email.com">91274@roc-teraa.nl</a></li>
+            <li><a href="https://github.com/DaanSchepens?tab=repositories" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
+          <form id="contact-form" class="card" novalidate>
+            <label>
+              <span>Naam</span>
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>
+              <span>E-mail</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>
+              <span>Bericht</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button type="submit" class="button primary">Verstuur</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Daan Schepens. Alle rechten voorbehouden.</p>
+      </div>
+    </footer>
+
+    <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-dialog" role="document">
+        <button class="modal-close" aria-label="Sluit" data-close-modal>✕</button>
+        <div class="modal-content">
+          <img id="modal-image" alt="Project afbeelding">
+          <div class="modal-body"> 
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <div class="modal-actions">
+              <a id="modal-code" class="button ghost" href="#" target="_blank" rel="noopener">Bekijk code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+
+
