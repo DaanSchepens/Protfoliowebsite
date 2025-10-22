@@ -86,7 +86,7 @@ const projects = [
     title:'CryptoMania',
     category:['web'],
     description:'A website displaying all cryptocurrency coins with their current values.',
-    image:'img\Screenshot 2025-10-22 141232.png',
+    image:'img/Screenshot 2025-10-22 141232.png',
     demo:'#', code:'https://github.com/DaanSchepens/CryptoMania'
   }
 ];
